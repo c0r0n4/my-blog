@@ -1,56 +1,27 @@
-// $theme: 'buttercup';
-// // $theme: 'zest';
-// // $theme: 'pickled-bluewood';
-
-// @if($theme == 'buttercup') {
-//     // Color: buttercup light
-//     $color-normal: #F1C40F;
-//     // Color: buttercup dark
-//     $color-dark: #F39C12;
-// }
-
-// @else if(theme == 'zest') {
-//     // Color: zest
-//     $color-normal: #E67E22;
-//     // Color: burnt orange
-//     $color-dark: #D35400;
-// }
-
-// @else if(theme =='pickled-bluewood') {
-//     // Color: pickled-bluewood light
-//     $color-normal: #34495E;
-//     // Color: pickled-bluewood dark
-//     $color-dark: #2C3E50;
-// }
-
-// $color-buttercup-light: #F1C40F;
-// $color-buttercup-dark: #F39C12;
-// $color-zest-light: #E67E22;
-// $color-zest-dark: #D35400;
-// $color-pickled-bluewood-normal: #34495E;
-// $color-pickled-bluewood-dark: #2C3E50;
-// $color-golden-grass: #DD9A2D;
-// $color-white: #FFF;
-
 $theme: 'buttercup';
 
+// This is to create a dumy, so that when compared using $theme status, will display accordingly
 $color-normal: #f1f1f1;
 $color-dark: #000;
 
-// @if ($theme == 'pickled-bluewood') {
-//     $color-normal: #34495E;
-//     $color-dark: #2C3E50;
-// }
-
-// @if ($theme == 'buttercup') {
+@if ($theme == 'pickled-bluewood') {
+    $color-normal: #34495E;
+    $color-dark: #2C3E50;
+}@else if ($theme == 'buttercup') {
     $color-normal: #f1c40f;
     $color-dark: #f39c12;
-// }
+}@else if ($theme == 'zest') {
+    $color-normal: #E67E22;
+    $color-dark: #D35400;
+}
 
-// @if ($theme == 'zest') {
-//     $color-normal: #E67E22;
-//     $color-dark: #D35400;
-// }
+$color-pickled-bluewood-light: #34495E;
+$color-pickled-bluewood-dark: #2C3E50;
+$color-buttercup-light: #f1c40f;
+$color-buttercup-dark: #f39c12;
+$color-zest-light: #E67E22;
+$color-zest-dark: #D35400;
+
 $color-athens-gray: #e7e9ec;
 $color-golden-grass: #dd9a2d;
 $color-white: #fff;
