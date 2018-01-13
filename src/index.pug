@@ -2,30 +2,31 @@ extend _component/layout/base.pug
 
 block config
     -
-        let title = 'Welcome to My Blog'
-        let description = "Using super My Blog is easy and you can get 100/100 score on Google pagespeed insights"
+        var title = 'Welcome to My Blog'
+        var description = "Using super My Blog is easy and you can get 100/100 score on Google pagespeed insights"
 block content
-    .welcome
+    div.welcome
         h1=title
         p.welcome__description=description
         a.scroll-down(href='#continue')
             span click to continue reading or scroll down
             span.continue-arrow
-    .content
+
+    div.content
         #continue
-        h2 Firstly, let's write some content
-        p
-            | The sources of my blog can be found on GitHub at
-            | #{" "}
-            a(href="https://github.com/c0r0n4/my-blog") My Blog
-        blockquote.blockquote
-            .blockquote__body
-                p You don't need to be good to start, you have to start to be good.
-            .blockquote__footer
-                a(href="", target="_blank") celestialbunny
-        p.lead Sint irure eu velit consequat sunt nisi eiusmod nisi dolore nulla cillum.
-        p
-            small Nisi deserunt reprehenderit excepteur incididunt. Culpa deserunt nostrud duis ut officia minim ex ullamco. Ea culpa dolor aliqua et adipisicing deserunt amet. Cillum consequat duis in magna laborum aliqua proident.
-        a.top(href="#top")
-            span Top
-            span.top-arrow
+            h2 Firstly, let's write some content
+            p
+                | The sources of my blog can be found on GitHub at
+                | #{" "}
+                a(href="https://github.com/c0r0n4/my-blog") My Blog
+            blockquote.blockquote
+                .blockquote__body
+                    p You don't have to be good to start, you have to start to become good.
+                .blockquote__footer
+                    a(href="http://bitbee.uk", target="_blank") Teh Chai Chong
+            p.lead Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            p
+                small Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+            a.top(href="#top")
+                span Top
+                span.top-arrow
