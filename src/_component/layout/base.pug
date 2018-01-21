@@ -6,7 +6,9 @@ html
         meta(name="description", content=description)
         link(rel='stylesheet', href='/style.css')
     body
-        .welcome
+    
+        include ../welcome/welcome.pug
+        .container
             block content
-        include ../menu/menu.pug
-        include ../footer/footer.pug
+            include ../menu/menu.pug
+            include ../footer/footer.pug
