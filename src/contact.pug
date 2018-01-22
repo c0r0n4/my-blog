@@ -5,8 +5,23 @@ block config
         let title = 'Contact My Blog';
         let description = "Contact me, the creator, Teh Chai Chong";
 block content
-    h1=title
-    p=description
-    a.scroll-down(href="#continue")
-        span Click to continue reading or scroll down
-        span.continue-arrow
+    .content
+        h2 Contact Information
+        p You can find me on those social media platforms:
+        ul
+            li
+                a(href="") Facebook
+            li
+                a(href="") Twitter
+            li
+                a(href="") LinkedIn
+            li
+                a(href="") YouTube
+            li
+                a(href="") StackOverflow
+        hr
+        figure.image-container
+            img.image(src="/asset/image/november.jpg")
+            figcaption.image-caption
+                strong Note:
+                span Leaves fall down in November
