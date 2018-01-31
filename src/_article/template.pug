@@ -1,0 +1,29 @@
+extend ../_component/layout/base
+
+block config
+    -
+        let title = template.head.title || 'Change me, title'
+        let description = template.head.description || "Change me, description"
+block content
+    .content
+        each something in template.body
+            if something.type == "h2"
+                h2=something.data
+            if something.type =="paragraph"
+                each paragraph in something.data
+                    p=paragraph
+
+            if something.type == "blockquote"
+                blockquote.blockquote
+                    .blockquote__body
+                        each paragraph in something.data
+                            p=paragraph
+                    .blockquote-footer
+                        a(href="http:bitbee.uk" target="_blank")=something.source
+
+            if something.type == "pre"
+                h3.pre-title=something.title
+                each dataValue in something.data
+                    pre=dataValue
+
+        //- pre=JSON.stringify(template.body, null, 6)
